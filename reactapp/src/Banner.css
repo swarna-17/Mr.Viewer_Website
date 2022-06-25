@@ -1,0 +1,9 @@
+.banner{
+    position: relative;
+    height: 448px;
+    color: white;
+    object-fit: cover;
+    width: 1021px;
+    height: 810px;
+    object-fit:scale-down;
+}

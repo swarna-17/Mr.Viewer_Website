@@ -1,0 +1,28 @@
+
+.nav{
+    position: fixed;
+    z-index:1;
+    top:0;
+}
+
+.nav_contents{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_black{
+    background-color: #111;
+}
+.nav_logo{
+    display: table;
+    position: fixed;
+    top: 10px;
+    left:0%;
+    width: 80px;
+    object-fit: cover;
+    padding-left: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}

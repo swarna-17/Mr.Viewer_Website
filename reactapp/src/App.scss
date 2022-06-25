@@ -1,0 +1,128 @@
+//Custom Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  font-family: "Open Sans", sans-serif;
+  
+}
+.App-header {
+  background-color: #282c34;
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  justify-content: flex-start;
+  align-content: flex-start;
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//Login Main Container
+.login {
+  width: 27rem;
+  height: 40rem;
+  //min-height: 44em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5px;
+  position: relative;
+  z-index: 99;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 20px 0px 22px 21px rgba(15, 15, 15, 0.2);
+    border-radius: 4px;
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 774px;
+    z-index: 99;
+    padding: 17px 20px;
+    //transition: transform 200ms ease-in-out;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color: #3498db;
+    width: 100%;
+    position: absolute;
+    right: -34%;
+    border-radius: 6px;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+
+    &.right {
+      right: -50%;
+      align-items:flex-end;
+      text-align: center;
+      height: 805px;
+      width: 90%;
+      &:hover {
+        right: -45%;
+      }
+    }
+    &.left {
+      right: 40%;
+      align-items: flex-start;
+      text-align: center;
+      height: 800px;
+      width: 100%;
+      &:hover {
+        right: 45%;
+      }
+    }
+
+    .text {
+      font-size: 21px;
+      font-weight: 500;
+      color: #fff;
+      margin-right: 3em;
+      margin-left: 3em;
+    }
+  }
+}
+
+//Button
+.btn {
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 0;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #2386c8;
+  }
+  &:focus {
+    outline:none;
+  }
+}
